@@ -1,0 +1,624 @@
+/* THIS IS THE MAIN STYLE SHEET FOR MUSCLE UP TEMPLATE */
+/* BY CHUKWUKA CHIMDINDU EMMANUEL */
+/* @Dindu on slack $ Dindu5 on github */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgb(19, 19, 19);
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-secondary {
+	color: #faed26;
+}
+
+/* ===================================== */
+/* ============ 1.0: HEADER ============ */
+/* ===================================== */
+
+/* ========= 1.1. TOP HEADER ========== */
+.top-header {
+	padding: 10px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid gray;
+	align-items: center;
+}
+.logo {
+	font-size: xx-large;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
+}
+.aside {
+	display: flex;
+	justify-content: space-between;
+}
+.aside i {
+	color: #faed26;
+}
+
+.menu-btn {
+	margin: 0;
+	padding: 0;
+	display: none;
+	margin-left: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	cursor: pointer;
+	z-index: 3;
+}
+.btn-line {
+	width: 18px;
+	height: 2px;
+	margin: 0 0 5px 0;
+	background: #faed26;
+	transition: all 0.6s;
+}
+
+.search-field {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding: 5px 5px;
+	border-bottom: 2px solid #5a5560;
+	margin-left: 5px;
+	color: white;
+	width: 150px;
+	outline: none;
+	transition: all 0.6s;
+}
+.search-field:hover,
+.search-field:focus {
+	border-bottom: 2px solid #faed26;
+	transition: all 0.6s;
+}
+/* ========= 1.2. NAVIGATION ========== */
+nav {
+	background: #5a5560;
+	padding: 15px 50px 20px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 2;
+}
+.left-nav a {
+	margin-right: 2vw;
+}
+.right-nav a {
+	margin-left: 2vw;
+	padding-right: 0;
+}
+.nav-link {
+	font-size: medium;
+	text-decoration: none;
+	color: #fffdfd;
+	padding: 0px 3px 1px 0px;
+	border-bottom: 2px solid #5a5560;
+}
+.nav-icon {
+	color: #faed26;
+	margin-right: 4px;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+	border-bottom: 2px solid #faed26;
+	transition: ease-out 0.7s;
+}
+
+/* ==== END OF HEADER STYLES ==== */
+
+/* ======================================================= */
+/* ======= 2.0: LANDING PAGE SECTION STYLES STYLES ======= */
+/* ======================================================= */
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	width: 99%;
+	height: 82vh;
+	margin: 0 5px;
+}
+
+/* ==== 2.1. LANDING IMAGES ==== */
+
+.description-img1,
+.description-img2 {
+	width: 38%;
+	background-position: center;
+	background-size: cover;
+}
+.description-img1 {
+	background-image: url(../imgs/1_DcXbEjyiKj3OseCrg9ftNw\ 1.svg);
+}
+.description-img2 {
+	background-image: url(../imgs/unnamed\ 1.svg);
+}
+
+/* ==== 2.2. LANDING AREA ==== */
+.landing-area {
+	width: 22%;
+}
+
+.landing-area {
+	padding: 0 10px;
+	text-align: center;
+
+	display: block;
+}
+.landing-area h3 {
+	font-size: x-large;
+	margin-top: 20vh;
+	margin-bottom: 10vh;
+}
+.landing-area a {
+	margin: 1vh 5vh;
+	display: inline-block;
+}
+
+.img-cover {
+	position: absolute;
+	margin-left: 1.9%;
+	bottom: 3.2vh;
+	width: 17vw;
+}
+.description-img3 {
+	width: 100%;
+	border: 4px solid white;
+}
+
+/* ==== 2.3. PRIMARY AND SECONDARY BUTTONS ==== */
+
+.primary-button {
+	color: white;
+	font-size: x-small;
+	text-decoration: none;
+	padding: 5px 20px;
+	background-color: #46344e;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0.1px 0.1px 5px black;
+}
+.secondary-button {
+	color: #9d8d8f;
+	text-decoration: none;
+	font-size: x-small;
+}
+.primary-button:hover,
+.primary-button:focus {
+	background-color: #faed26;
+	transition: all 0.6s;
+	color: black;
+}
+.secondary-button:hover,
+.secondary-button:focus {
+	color: #faed26;
+	transition: all 0.6s;
+}
+/* ============== END OF SECTION STYLES ============ */
+
+/* ================================================== */
+/* ================ 3.0: FOOTER STYLES ============== */
+/* ================================================== */
+
+#footer {
+	padding-left: 50px;
+}
+.top-footer {
+	margin: 30px 0px;
+}
+.mid-footer {
+	display: grid;
+	grid-template-areas: 'working-hours call subscription';
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-gap: 5px;
+	margin: 30px 0px;
+}
+.mid-footer p {
+	font-size: small;
+}
+.mid-footer h4 {
+	font-weight: 500;
+}
+.working-hours,
+.call,
+.bottom-footer {
+	display: flex;
+}
+.footer-icon {
+	width: 35px;
+	margin-right: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.wrapper {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.subscription {
+	text-align: center;
+	background-color: #faed26;
+	padding: 4px;
+	color: #5a5560;
+	display: block;
+	padding: 6px 30px 6px 30px;
+}
+.subscription h3,
+.subscription p,
+.subscription input,
+.subscription button {
+	margin: 12px 0px;
+}
+.subscription input {
+	border: none;
+	text-align: center;
+	padding: 2px;
+}
+.subscription button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ===== Bottom Footer ====== */
+.bottom-footer {
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	justify-content: space-between;
+}
+.icon {
+	color: black;
+	font-size: large;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: white;
+	border-radius: 50px;
+	margin-right: 4px;
+	margin-left: 1px;
+}
+.icon:hover {
+	background-color: #faed26;
+	transition: all 0.6s;
+}
+.link-1 {
+	margin-right: 5px;
+}
+
+/* ===== END OF FOOTER ====== */
+
+/* ================================================== */
+/* ========== 4.0: LOGIN / SIGN - UP PAGE =========== */
+/* ================================================== */
+
+#signin {
+	background-image: url(../imgs/img4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.overlay {
+	background-color: rgba(0, 0, 0, 0.643);
+	padding: 5vh 0;
+}
+.login-box {
+	background-color: rgba(0, 0, 0, 0.787);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: max-content;
+	padding: 10px 20px;
+	border-radius: 2px;
+}
+.login-box form {
+	margin: 15px 0;
+}
+.login-box h2 {
+	font-size: 6rem;
+
+	color: #faed26;
+}
+.login-box h5 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.login-box p {
+	font-size: medium;
+	font-weight: 200;
+	margin: 20px 20px;
+}
+.login-box a {
+	text-decoration: none;
+	color: #faed26;
+	font-weight: 600;
+}
+.form-field {
+	display: block;
+	margin: 15px auto;
+	padding: 6px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #c8c7c7;
+	transition: all 0.6s;
+	width: 280px;
+	color: #faed26;
+}
+.form-field:focus,
+.form-field:hover,
+.form-field:active {
+	color: #faed26;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #faed26;
+	outline-offset: 0px;
+	outline: none;
+	-webkit-appearance: none;
+}
+.input-container {
+	display: flex;
+	width: 100%;
+}
+.form-icon {
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 22px;
+	color: #faed26;
+}
+.login-box button {
+	padding: 9px 35px;
+	background-color: #faed26;
+	border-radius: 50px;
+	color: rgb(98, 86, 86);
+	border: none;
+	box-shadow: 0.5px 0.5px 5px rgb(44, 42, 42);
+	font-weight: 600;
+	margin: 10px 0;
+}
+.login-box button:hover,
+.login-box button:focus,
+.login-box button:active {
+	cursor: pointer;
+	transform: translateY(3px);
+	color: black;
+	background-color: #ffee00;
+	transition: all 0.6s;
+}
+
+/* ================================================== */
+/* ========= 5.0: PAGES UNDER CONSTRUCTION ========== */
+/* ================================================== */
+
+#packages,
+#reviews,
+#contact {
+	height: 70vh;
+	background-color: rgb(37, 37, 37);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+#packages h1,
+#reviews h1,
+#contact h1 {
+	color: #faed26;
+	padding: 20px;
+}
+#packages h2,
+#reviews h2,
+#contact h2 {
+	font-weight: 400;
+}
+
+/* ================================================== */
+/* ================ 6.0: RESPONSIVENESS ============== */
+/* ================================================== */
+
+@media screen and (max-width: 768px) {
+	.landing-area h3 {
+		font-size: large;
+	}
+	.primary-button {
+		padding: 5px 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.top-header,
+	nav {
+		padding: 10px 20px;
+	}
+	.logo {
+		font-size: large;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+
+	.aside i {
+		color: #faed26;
+		margin-bottom: 11px;
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.search-field {
+		position: relative;
+		display: none;
+		transition: all 0.6s;
+	}
+	.search-field.show {
+		display: list-item;
+	}
+	.search-icon.hide {
+		display: none;
+	}
+
+	.menu-btn {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.6s;
+		color: #faed26;
+	}
+
+	nav {
+		position: fixed;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		width: 80vw;
+		right: 0;
+		top: 0;
+		opacity: 0.98;
+		height: 100vh;
+		transform: translate3d(100%, 0, 0);
+		transition: all 0.6s;
+		visibility: hidden;
+	}
+	nav.show {
+		visibility: visible;
+		transform: translate3d(0, 0, 0);
+	}
+	.menu-btn.close {
+		transition: all 0.6s;
+		color: red;
+	}
+	.menu-btn.close .btn-line:nth-child(1) {
+		transform: rotate(45deg) translateY(5px);
+		background-color: #faed26;
+	}
+	.menu-btn.close .btn-line:nth-child(2) {
+		display: none;
+	}
+	.menu-btn.close .btn-line:nth-child(3) {
+		transform: rotate(-45deg) translateY(-5px);
+		background-color: #faed26;
+	}
+
+	.left-nav a {
+		margin-right: 0;
+	}
+	.right-nav a {
+		margin-left: 0;
+	}
+
+	.nav-link {
+		display: block;
+		margin: 30px 0px;
+		text-align: center;
+	}
+
+	/* ========= Footer ========== */
+	#footer {
+		padding-left: 20px;
+	}
+	.mid-footer {
+		display: grid;
+		grid-template-areas: 'subscription  subscription' 'working-hours call';
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 25px;
+		margin: 40px 0px;
+	}
+	.mid-footer p {
+		font-size: xx-small;
+	}
+	.mid-footer h4 {
+		font-size: small;
+		font-weight: 500;
+	}
+
+	.bottom-footer {
+		margin-right: 20px;
+		margin-top: 50px;
+		margin-bottom: 15px;
+	}
+	.subscription {
+		grid-column: span 2;
+	}
+	.working-hours {
+		grid-area: 'working-hours';
+	}
+	.call {
+		grid-area: 'call';
+	}
+	.description-img1,
+	.description-img3,
+	.description-img2 {
+		display: none;
+	}
+	.main {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.landing-area {
+		width: 100vw;
+		margin: 0;
+		background: url(../imgs/img5.png);
+		background-position: center;
+		background-size: cover;
+		padding: 10vh 30px;
+	}
+	.landing-area h4,
+	.landing-area a {
+		margin: 5px;
+	}
+	.landing-area a.primary-button {
+		display: inline-block;
+	}
+	.landing-area a.secondary-button {
+		display: none;
+	}
+	.shortlink-1,
+	.shortlink-2 {
+		margin-top: -35px;
+		position: absolute;
+	}
+	.shortlink-2 {
+		right: 20px;
+	}
+
+	/* ==== Login ===== */
+
+	.overlay {
+		padding: 15vh 0;
+	}
+
+	.login-box form {
+		margin: 15px 0;
+	}
+	.login-box h2 {
+		font-size: 4rem;
+	}
+	.login-box h5 {
+		font-size: 1.3rem;
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	.login-box p {
+		font-size: small;
+		font-weight: 100;
+		margin: 10px 10px;
+	}
+	.form-field {
+		font-size: small;
+		margin: 10px auto;
+		padding: 6px;
+		width: 200px;
+	}
+	.form-icon {
+		margin-left: 192px;
+		margin-top: 14px;
+		z-index: 0;
+	}
+	.login-box button {
+		padding: 5px 25px;
+		font-weight: 400;
+	}
+}
